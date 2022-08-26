@@ -69,7 +69,7 @@ body {
 
   h1 {
     margin: auto auto;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-shadow: rgb(238,174,202) 4px 4px;
   }
 
