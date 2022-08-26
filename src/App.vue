@@ -4,14 +4,14 @@
     <h1>💪🏼 💌 🙏</h1>
   </div>
   <div class="grid">
-    <SoundButton name="big send please!" icon="💌" />
-    <SoundButton name="we're going big today!" icon="💪🏼" />
-    <SoundButton name="order up!" icon="🆙" />
-    <SoundButton name="yes chef!" icon="👩‍🍳" />
-    <SoundButton name="reverse starfish!" icon="⭐️" />
-    <SoundButton name="crab tickler!" icon="🦀" />
-    <SoundButton name="slap it!" icon="🖐" />
-    <SoundButton name="toe reveal!" icon="🦶" />
+    <SoundButton name="big send please!" icon="💌" :files="['big-send-kat.m4a', 'big-send-tim.m4a']" />
+    <SoundButton name="we're going big today!" icon="💪🏼" :files="['going-big-kat.m4a', 'going-big-tim.m4a']" />
+    <SoundButton name="order up!" icon="🆙" :files="['order-up-kat.m4a', 'order-up-tim.m4a']" />
+    <SoundButton name="yes chef!" icon="👩‍🍳" :files="['yes-chef-kat.m4a', 'yes-chef-tim.m4a']" />
+    <SoundButton name="reverse starfish?" icon="⭐️" :files="['reverse-starfish-kat.m4a', 'reverse-starfish-tim.m4a']" />
+    <SoundButton name="crab tickler!" icon="🦀" :files="['crab-tickler-kat.m4a', 'crab-tickler-tim.m4a']" />
+    <SoundButton name="slap it!" icon="🖐" :files="['slap-it-kat.m4a', 'slap-it-tim.m4a']" />
+    <SoundButton name="toe reveal!" icon="🦶" :files="['toe-reveal-kat.m4a', 'toe-reveal-tim.m4a']" />
   </div>
 </template>
 
@@ -80,5 +80,7 @@ body {
   grid-gap: 1rem;
   padding: 20px;
   margin: 60px 0 0 0;
+  overflow: hidden;
+  min-height: calc(100vh - 60px);
 }
 </style>

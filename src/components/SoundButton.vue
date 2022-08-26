@@ -13,12 +13,12 @@ export default {
   props: {
     name: String,
     icon: String,
-    audio: String
+    files: Array
   },
   data() {
     return {
       isPlaying: false,
-      sound: null
+      sounds: [],
     }
   },
   computed: {
@@ -31,18 +31,27 @@ export default {
   },
   methods: {
     play() {
-      if (this.sound === null) this.initSound();
-      this.sound.stop();
+      if (this.sounds.length === 0) this.initSounds();
+      if (this.isPlaying) this.stopSounds();
       this.isPlaying = true;
       this.angle = -30 + Math.floor(Math.random() * 60);
-      this.sound.play();
+      const i = Math.floor(Math.random() * 2);
+      this.sounds[i].play();
     },
-    initSound() {
-      this.sound = new Howl({
-        src: ['audio/orderup.mp3']
+    initSounds() {
+      this.files.forEach((file) => {
+        const sound = new Howl({
+          src: [`audio/${file}`]
+        });
+        this.sounds.push(sound)
+        sound.on('end', () => {
+          this.isPlaying = false;
+        });
       });
-      this.sound.on('end', () => {
-        this.isPlaying = false;
+    },
+    stopSounds() {
+      this.sounds.forEach((sound) => {
+        sound.stop();
       });
     }
   },
@@ -66,6 +75,7 @@ export default {
   border-style: outset;
   background: rgba(255, 255, 255, 0.3);
   border-width: 3px;
+  cursor: pointer;
 
   p {
     margin: 0;
