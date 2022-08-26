@@ -41,7 +41,8 @@ export default {
     initSounds() {
       this.files.forEach((file) => {
         const sound = new Howl({
-          src: [`audio/${file}`]
+          src: [`audio/${file}`],
+          html5: true,
         });
         this.sounds.push(sound)
         sound.on('end', () => {
