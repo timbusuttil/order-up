@@ -4,14 +4,14 @@
     <!-- <h1>💪🏼 💌 🙏</h1> -->
   </div>
   <div class="grid">
-    <SoundButton name="big send please!" icon="💌" :files="['big-send-kat.m4a', 'big-send-tim.m4a']" />
-    <SoundButton name="we're going big today!" icon="💪🏼" :files="['going-big-kat.m4a', 'going-big-tim.m4a']" />
-    <SoundButton name="order up!" icon="🆙" :files="['order-up-kat.m4a', 'order-up-tim.m4a']" />
-    <SoundButton name="yes chef!" icon="👩‍🍳" :files="['yes-chef-kat.m4a', 'yes-chef-tim.m4a']" />
-    <SoundButton name="reverse starfish?" icon="⭐️" :files="['reverse-starfish-kat.m4a', 'reverse-starfish-tim.m4a']" />
-    <SoundButton name="crab tickler!" icon="🦀" :files="['crab-tickler-kat.m4a', 'crab-tickler-tim.m4a']" />
-    <SoundButton name="slap it!" icon="🖐" :files="['slap-it-kat.m4a', 'slap-it-tim.m4a']" />
-    <SoundButton name="toe reveal!" icon="🦶" :files="['toe-reveal-kat.m4a', 'toe-reveal-tim.m4a']" />
+    <SoundButton name="big send please!" icon="💌" :files="['big-send-kat.mp3', 'big-send-tim.mp3']" />
+    <SoundButton name="we're going big today!" icon="💪🏼" :files="['going-big-kat.mp3', 'going-big-tim.mp3']" />
+    <SoundButton name="order up!" icon="🆙" :files="['order-up-kat.mp3', 'order-up-tim.mp3']" />
+    <SoundButton name="yes chef!" icon="👩‍🍳" :files="['yes-chef-kat.mp3', 'yes-chef-tim.mp3']" />
+    <SoundButton name="reverse starfish?" icon="⭐️" :files="['reverse-starfish-kat.mp3', 'reverse-starfish-tim.mp3']" />
+    <SoundButton name="crab tickler!" icon="🦀" :files="['crab-tickler-kat.mp3', 'crab-tickler-tim.mp3']" />
+    <SoundButton name="slap it!" icon="🖐" :files="['slap-it-kat.mp3', 'slap-it-tim.mp3']" />
+    <SoundButton name="toe reveal!" icon="🦶" :files="['toe-reveal-kat.mp3', 'toe-reveal-tim.mp3']" />
   </div>
 </template>
 
