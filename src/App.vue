@@ -1,7 +1,7 @@
 <template>
   <div class="nav">
-    <h1>Big Send Please!!</h1>
-    <h1>💪🏼 💌 🙏</h1>
+    <h1>The <strong>Big Send</strong> Soundboard</h1>
+    <!-- <h1>💪🏼 💌 🙏</h1> -->
   </div>
   <div class="grid">
     <SoundButton name="big send please!" icon="💌" :files="['big-send-kat.m4a', 'big-send-tim.m4a']" />
@@ -64,13 +64,17 @@ body {
   justify-content: space-between;
   background: #94bbe9;
   box-shadow: 0 0 10px 0 black;
-  font-family: "MontserratBold";
   color: white;
+  text-align: center;
 
   h1 {
-    margin: auto 0;
-    font-size: 1.6rem;
+    margin: auto auto;
+    font-size: 1.5rem;
     text-shadow: rgb(238,174,202) 4px 4px;
+  }
+
+  strong {
+    font-family: "MontserratBold";
   }
 }
 
